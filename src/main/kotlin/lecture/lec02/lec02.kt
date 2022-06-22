@@ -40,4 +40,7 @@ fun startsWithA3(str: String?): Boolean {
 //    return str.startsWith("A")
 }
 
+fun startsWith(str: String?): Boolean {
+    return str!!.startsWith("A")
+}
 
