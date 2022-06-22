@@ -15,6 +15,9 @@ fun main() {
 
     val person = Person("철수")
     startsWith4(person.name)
+
+    val person2 = Person(null)
+    startsWith4(person2.name) // 컴파일 에러!
 }
 
 fun startsWithA1(str: String?): Boolean {
