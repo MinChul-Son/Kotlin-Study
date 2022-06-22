@@ -1,5 +1,6 @@
 package lecture
 
+import lecture.lec02.Person
 import java.lang.IllegalArgumentException
 
 fun main() {
@@ -11,6 +12,9 @@ fun main() {
     println(str2?.length ?:0)
     val str3: String? = null
     println(str3?.length ?:0)
+
+    val person = Person("철수")
+    startsWith4(person.name)
 }
 
 fun startsWithA1(str: String?): Boolean {
@@ -42,5 +46,9 @@ fun startsWithA3(str: String?): Boolean {
 
 fun startsWith(str: String?): Boolean {
     return str!!.startsWith("A")
+}
+
+fun startsWith4(str: String): Boolean {
+    return str.startsWith("A")
 }
 
